@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CEOfflineBase", "CEOfflineBase\CEOfflineBase.vbproj", "{253BBB73-17FF-4489-AA7D-097358CD5837}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CE_FRDFT", "..\CE_FRDFT\CE_FRDFT.vbproj", "{877D2F6F-6AFD-4721-BD2E-D895E65A0864}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CE_FRDLT", "..\CE_FRDLT\CE_FRDLT.vbproj", "{DD08AB84-C491-47C1-B3D2-A2309C946F7B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CE_FRPACK", "..\CE_FRPACK\CE_FRPACK.vbproj", "{28A647BF-D35E-414A-94B5-76BFDFA77055}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CE_FRTTINFO", "..\frttMobile\frttMobile\CE_FRTTINFO.vbproj", "{DA23BED6-5A47-4800-B9E8-E238F58B7E5E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ce_frttpack", "..\CE_frttPack\SmartDeviceProject1\ce_frttpack.vbproj", "{2A6B5BDE-6F67-4FD2-9285-CFCA660F1D3A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC02A557-E185-48C5-A0E9-796660333ED8} = {EC02A557-E185-48C5-A0E9-796660333ED8}
+		{DA23BED6-5A47-4800-B9E8-E238F58B7E5E} = {DA23BED6-5A47-4800-B9E8-E238F58B7E5E}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB_RFID2_Sample", "..\..\..\..\Users\Public\Motorola EMDK for .NET\v2.4\Samples VS2008\VB\VB_RFID2_Sample\VB_RFID2_Sample.vbproj", "{EC02A557-E185-48C5-A0E9-796660333ED8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{253BBB73-17FF-4489-AA7D-097358CD5837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253BBB73-17FF-4489-AA7D-097358CD5837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253BBB73-17FF-4489-AA7D-097358CD5837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253BBB73-17FF-4489-AA7D-097358CD5837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877D2F6F-6AFD-4721-BD2E-D895E65A0864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877D2F6F-6AFD-4721-BD2E-D895E65A0864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877D2F6F-6AFD-4721-BD2E-D895E65A0864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877D2F6F-6AFD-4721-BD2E-D895E65A0864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD08AB84-C491-47C1-B3D2-A2309C946F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD08AB84-C491-47C1-B3D2-A2309C946F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD08AB84-C491-47C1-B3D2-A2309C946F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD08AB84-C491-47C1-B3D2-A2309C946F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A647BF-D35E-414A-94B5-76BFDFA77055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A647BF-D35E-414A-94B5-76BFDFA77055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A647BF-D35E-414A-94B5-76BFDFA77055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A647BF-D35E-414A-94B5-76BFDFA77055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA23BED6-5A47-4800-B9E8-E238F58B7E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA23BED6-5A47-4800-B9E8-E238F58B7E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA23BED6-5A47-4800-B9E8-E238F58B7E5E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DA23BED6-5A47-4800-B9E8-E238F58B7E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA23BED6-5A47-4800-B9E8-E238F58B7E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA23BED6-5A47-4800-B9E8-E238F58B7E5E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2A6B5BDE-6F67-4FD2-9285-CFCA660F1D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6B5BDE-6F67-4FD2-9285-CFCA660F1D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6B5BDE-6F67-4FD2-9285-CFCA660F1D3A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A6B5BDE-6F67-4FD2-9285-CFCA660F1D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6B5BDE-6F67-4FD2-9285-CFCA660F1D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6B5BDE-6F67-4FD2-9285-CFCA660F1D3A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EC02A557-E185-48C5-A0E9-796660333ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC02A557-E185-48C5-A0E9-796660333ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC02A557-E185-48C5-A0E9-796660333ED8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EC02A557-E185-48C5-A0E9-796660333ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC02A557-E185-48C5-A0E9-796660333ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC02A557-E185-48C5-A0E9-796660333ED8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

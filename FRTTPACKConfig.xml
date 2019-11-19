@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config
+  PackID="4"
+  ClosePassword="1111"
+  ServiceURL="http://10.145.76.12/service/FRTT_CE_Sync.asmx"
+  ServiceURL2="http://192.168.0.37/FRTT_CE_Sync.asmx"
+>
+
+</config>

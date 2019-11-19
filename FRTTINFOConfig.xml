@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config
+Server="10.145.76.12"
+DB="frtt"
+User="FRTT"
+Password="FRTT"
+Integrated="No"
+>
+
+</config>

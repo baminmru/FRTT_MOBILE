@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://microsoft.com/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://microsoft.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/webservices/">
+      <s:element name="GetFTCount">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFTCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFTCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ping">
+        <s:complexType />
+      </s:element>
+      <s:element name="PingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PingResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FTIdx" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLT">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProtocol">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="P" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProtocolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveProtocolResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveLT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="P" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveLTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveLTResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveTAG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TagID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PackID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveTAGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveTAGResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncodeTag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TagID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncodeTagResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncodeTagResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWMFTCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wmType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="wmGroup" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWMFTCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetWMFTCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWMFT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wmType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="wmGroup" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FTIdx" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWMFTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWMFTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetFTCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFTCount" />
+  </wsdl:message>
+  <wsdl:message name="GetFTCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFTCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="PingSoapIn">
+    <wsdl:part name="parameters" element="tns:Ping" />
+  </wsdl:message>
+  <wsdl:message name="PingSoapOut">
+    <wsdl:part name="parameters" element="tns:PingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFTSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFT" />
+  </wsdl:message>
+  <wsdl:message name="GetFTSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFTResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLTSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLT" />
+  </wsdl:message>
+  <wsdl:message name="GetLTSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLTResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveProtocolSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveProtocol" />
+  </wsdl:message>
+  <wsdl:message name="SaveProtocolSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveProtocolResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveLTSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveLT" />
+  </wsdl:message>
+  <wsdl:message name="SaveLTSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveLTResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveTAGSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveTAG" />
+  </wsdl:message>
+  <wsdl:message name="SaveTAGSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveTAGResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncodeTagSoapIn">
+    <wsdl:part name="parameters" element="tns:EncodeTag" />
+  </wsdl:message>
+  <wsdl:message name="EncodeTagSoapOut">
+    <wsdl:part name="parameters" element="tns:EncodeTagResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWMFTCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWMFTCount" />
+  </wsdl:message>
+  <wsdl:message name="GetWMFTCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWMFTCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWMFTSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWMFT" />
+  </wsdl:message>
+  <wsdl:message name="GetWMFTSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWMFTResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRTT_CE_SyncSoap">
+    <wsdl:operation name="GetFTCount">
+      <wsdl:input message="tns:GetFTCountSoapIn" />
+      <wsdl:output message="tns:GetFTCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Ping">
+      <wsdl:input message="tns:PingSoapIn" />
+      <wsdl:output message="tns:PingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFT">
+      <wsdl:input message="tns:GetFTSoapIn" />
+      <wsdl:output message="tns:GetFTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLT">
+      <wsdl:input message="tns:GetLTSoapIn" />
+      <wsdl:output message="tns:GetLTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProtocol">
+      <wsdl:input message="tns:SaveProtocolSoapIn" />
+      <wsdl:output message="tns:SaveProtocolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLT">
+      <wsdl:input message="tns:SaveLTSoapIn" />
+      <wsdl:output message="tns:SaveLTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTAG">
+      <wsdl:input message="tns:SaveTAGSoapIn" />
+      <wsdl:output message="tns:SaveTAGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncodeTag">
+      <wsdl:input message="tns:EncodeTagSoapIn" />
+      <wsdl:output message="tns:EncodeTagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWMFTCount">
+      <wsdl:input message="tns:GetWMFTCountSoapIn" />
+      <wsdl:output message="tns:GetWMFTCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWMFT">
+      <wsdl:input message="tns:GetWMFTSoapIn" />
+      <wsdl:output message="tns:GetWMFTSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FRTT_CE_SyncSoap" type="tns:FRTT_CE_SyncSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFTCount">
+      <soap:operation soapAction="http://microsoft.com/webservices/GetFTCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ping">
+      <soap:operation soapAction="http://microsoft.com/webservices/Ping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFT">
+      <soap:operation soapAction="http://microsoft.com/webservices/GetFT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLT">
+      <soap:operation soapAction="http://microsoft.com/webservices/GetLT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProtocol">
+      <soap:operation soapAction="http://microsoft.com/webservices/SaveProtocol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLT">
+      <soap:operation soapAction="http://microsoft.com/webservices/SaveLT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTAG">
+      <soap:operation soapAction="http://microsoft.com/webservices/SaveTAG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncodeTag">
+      <soap:operation soapAction="http://microsoft.com/webservices/EncodeTag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWMFTCount">
+      <soap:operation soapAction="http://microsoft.com/webservices/GetWMFTCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWMFT">
+      <soap:operation soapAction="http://microsoft.com/webservices/GetWMFT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FRTT_CE_SyncSoap12" type="tns:FRTT_CE_SyncSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFTCount">
+      <soap12:operation soapAction="http://microsoft.com/webservices/GetFTCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ping">
+      <soap12:operation soapAction="http://microsoft.com/webservices/Ping" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFT">
+      <soap12:operation soapAction="http://microsoft.com/webservices/GetFT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLT">
+      <soap12:operation soapAction="http://microsoft.com/webservices/GetLT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProtocol">
+      <soap12:operation soapAction="http://microsoft.com/webservices/SaveProtocol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLT">
+      <soap12:operation soapAction="http://microsoft.com/webservices/SaveLT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTAG">
+      <soap12:operation soapAction="http://microsoft.com/webservices/SaveTAG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncodeTag">
+      <soap12:operation soapAction="http://microsoft.com/webservices/EncodeTag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWMFTCount">
+      <soap12:operation soapAction="http://microsoft.com/webservices/GetWMFTCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWMFT">
+      <soap12:operation soapAction="http://microsoft.com/webservices/GetWMFT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRTT_CE_Sync">
+    <wsdl:port name="FRTT_CE_SyncSoap" binding="tns:FRTT_CE_SyncSoap">
+      <soap:address location="http://10.145.6.206/service/FRTT_CE_Sync.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FRTT_CE_SyncSoap12" binding="tns:FRTT_CE_SyncSoap12">
+      <soap12:address location="http://10.145.6.206/service/FRTT_CE_Sync.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

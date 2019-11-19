@@ -1,0 +1,9 @@
+<FRDLT>
+  <APPLICATION ID="590a2e1d-a3b0-4bcb-8ff5-cd488d01f730" TYPENAME="FRDLT" NAME="Справочник типов лотков" STATUS="00000000-0000-0000-0000-000000000000">
+    <FRDLT_INFO_COL>
+      <FRDLT_INFO ID="1194e19a-836a-43ec-bef5-10084b47ea20" RetriveTime="635183079306820007" ChangeTime="632428088180000000" AccessTime="599264352000000000" TheCode="A" TheName="Пластиковый широкий" IsPaper="0" LabelNumber="1" NxtNumber="4745" NxtNumber1="48" NxtNumber2="713" NxtNumber3="153" NxtNumber4="0" NxtNumber5="0" NxtNumber6="0" NxtNumber7="0" NxtNumber8="0" NxtNumber9="0" />
+      <FRDLT_INFO ID="f4d46304-e8fa-42e6-b03c-6677eb3c9c35" RetriveTime="635183079306820007" ChangeTime="632428088180000000" AccessTime="599264352000000000" TheCode="B" TheName="Пластиковый узкий" IsPaper="0" LabelNumber="2" NxtNumber="2451" NxtNumber1="8" NxtNumber2="62" NxtNumber3="91" NxtNumber4="1" NxtNumber5="1" NxtNumber6="1" NxtNumber7="1" NxtNumber8="1" NxtNumber9="1" />
+      <FRDLT_INFO ID="e1c5c980-c776-4538-841f-cce2e0362424" RetriveTime="635183079306820007" ChangeTime="632428088180000000" AccessTime="599264352000000000" TheCode="С" TheName="Бумажный" IsPaper="-1" LabelNumber="3" NxtNumber="664" NxtNumber1="19" NxtNumber2="14" NxtNumber3="2" NxtNumber4="0" NxtNumber5="0" NxtNumber6="0" NxtNumber7="0" NxtNumber8="0" NxtNumber9="0" />
+    </FRDLT_INFO_COL>
+  </APPLICATION>
+</FRDLT>

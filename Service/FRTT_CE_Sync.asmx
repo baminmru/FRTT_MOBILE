@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="FRTT_CE_Sync.asmx.vb" Class="FRTT_CE_Sync.FRTT_CE_Sync" %>
